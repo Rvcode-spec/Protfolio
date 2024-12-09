@@ -1,12 +1,17 @@
-document.addEventListener('DOMContentLoaded', () => {
-    let menu = document.querySelector('#header ul');
-    let bar = document.querySelector('#header .fa-bars');
+// document.addEventListener('DOMContentLoaded', () => {
+//     let menu = document.querySelector('#header ul');
+//     let bar = document.querySelector('#header .fa-bars');
 
-    bar.addEventListener('click', () => {
-        menu.classList.toggle('show');
-        console.log("Menu toggled");
-    });
+//     bar.addEventListener('click', () => {
+//         menu.classList.toggle('show');
+//         console.log("Menu toggled");
+//     });
+// });
+
+document.querySelector('#header .fa-bars').addEventListener('click', function() {
+    document.querySelector('#header').classList.toggle('show');
 });
+
 
 const colors = ["#d20962", "#0ebeff", "#7ac143", "#00a78e", "#00bce4", "#8e43e7", "#005be2",];
 const numballs = 30;

@@ -242,45 +242,39 @@
     }
 }
 
-@media(max-width: 800px){
-
- #header .fa-bars{
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-    /* color: #fff; */
+@media (max-width: 800px) {
+    #header .fa-bars {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
     }
- #header{
+    #header {
         position: relative;
-        border: 2px solid #0000;
     }
-    #header ul{
+    #header ul {
         position: absolute;
         top: 100%;
         left: 0;
         height: 450px;
         width: 100%;
         background: #9c2d2d;
-        border-top: 2px solid #0000;
-        border-bottom: 2px solid #0000;
         padding-left: 8px;
-        display: none ;
+        display: none;
     }
-    #header ul li{
+    #header ul li {
         display: block;
         padding: 10px 0;
         margin: 10px 0;
-
     }
-    #header.show {
+    #header.show ul {
         display: block;
     }
-    .contact-section{
+    .contact-section {
         flex-direction: column;
         margin-bottom: 30px;
     }
 }
-
 
 @media(max-width: 768px){
     .hero .hero-images .elements img:nth-child(1),
