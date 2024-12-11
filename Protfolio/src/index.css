@@ -11,6 +11,7 @@
     width: 100%;
     min-height: 720px;
     background-color: #f5edd8;
+    overflow: hidden;
 }
 
 #header{
@@ -210,13 +211,13 @@
     will-change: transform;
 }
 
-@media(max-width: 800px){
+@media(max-width: 1100px){
 
     .main{
         min-height: 800px;
     }
     .hero{
-        flex-direction: column-reverse;
+        flex-direction:column-reverse
     }
     .hero .hero-images{
         margin-top: 3rem;
@@ -247,27 +248,33 @@
         display: block;
         font-size: 24px;
         cursor: pointer;
-        color: #fff;
+        
     }
     #header {
         position: relative;
+        border-bottom: 2px solid #111;
     }
     #header ul {
         position: absolute;
         top: 100%;
         left: 0;
-        height: 450px;
         width: 100%;
-        background: #9c2d2d;
-        padding-left: 8px;
+        height: 450px;
+        background: #fff;
+        border-top: 2px solid #111;
+        border-bottom: 2px solid #111;
+        padding: 10px;
         display: none;
+        z-index: 999;
     }
+
+
     #header ul li {
         display: block;
         padding: 10px 0;
         margin: 10px 0;
     }
-    #header.show ul {
+    #header .show{
         display: block;
     }
     .contact-section {

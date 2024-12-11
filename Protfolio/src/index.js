@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let bar = document.querySelector('#header .fa-bars');
 
     bar.addEventListener('click', () => {
-        menu.classList.toggle('show');
+        menu.classList.toggle("show");
         console.log("Menu toggled");
     });
 });
