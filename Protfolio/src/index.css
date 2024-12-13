@@ -154,46 +154,13 @@
 .hero .hero-images{
     height: 600px;
     width: auto;
-    flex: 30%;
+    flex: 20%;
     position: relative;
 
 }
 .hero .hero-images img{
     height: 100%;
     width: 100%;
-}
-
-.hero .hero-images .elements img:nth-child(1){
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 130px;
-    width: 120px;
-}
-
-.hero .hero-images .elements img:nth-child(2){
-    position: absolute;
-    top: 8%;
-    left: 10%;
-    height: 130px;
-    width: 120px;
-}
-
-.hero .hero-images .elements img:nth-child(3){
-    position: absolute;
-    top: 10%;
-    left: 72%;
-    height:130px;
-    width: 120px;
-
-}
-
-.hero .hero-images .elements img:nth-child(4){
-    position: absolute;
-    top: 75%;
-    left: 72%;
-    height: 130px;
-    width: 120px;
 }
 
 /*  Ball Animation Part */
@@ -211,24 +178,56 @@
     will-change: transform;
 }
 
+
+.info, .services-info, .blog-info, .contact-info{
+    width: 900px;
+    height: 400px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 67, 18);
+    color: white;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    position: absolute;
+    z-index: 999;
+}
+.info.show, .services-info.show, .blog-info.show, .contact-info.show {
+    display: flex;
+}
+
+.fa-xmark{
+
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
+
 @media (max-width: 1100px) {
     .main {
         min-height: 800px;
     }
 
     .hero {
-        display: flex; /* Ensure flex layout is applied */
-        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column; /* Change to column to place image above text */
     }
 
     .hero .hero-images {
-        margin-top: 3rem;
-        height: 550px; /* Specify height */
+        margin: 0 auto; /* Center the image */
+        height: 450px; /* Specify height */
         width: auto; /* Ensure proper scaling */
     }
 
     .hero .contact {
-        margin-top: 6rem;
+        margin-top: 2rem;
     }
 
     .hero .content h3, 
@@ -246,6 +245,40 @@
     }
 }
 
+
+/* ------------------------------------------------------------------------------------- */
+/* info box media queries */
+
+@media screen and (max-width: 768px) {
+    .info, .services-info, .blog-info, .contact-info {
+        width: 90%; /* Adjust to 90% of the screen width */
+        height: auto; /* Allow height to adjust dynamically */
+        padding: 15px; /* Reduce padding */
+        border-radius: 4px; /* Slightly smaller border-radius */
+    }
+    .fa-xmark {
+        top: 5px; /* Adjust for smaller screens */
+        right: 10px;
+        font-size: 18px; /* Reduce font size */
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .info, .services-info, .blog-info, .contact-info {
+        width: 95%; /* Further reduce width */
+        padding: 10px; /* Minimize padding */
+        font-size: 14px; /* Adjust font size for content */
+    }
+    .fa-xmark {
+        top: 5px;
+        right: 10px;
+        font-size: 16px; /* Further reduce font size */
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
 
 @media (max-width: 800px) {
     #header .fa-bars {
