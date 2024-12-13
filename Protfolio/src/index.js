@@ -21,6 +21,8 @@ const contactBox = document.querySelector('.contact-info');
 
 const closeButtons = document.querySelectorAll('.fa-xmark');
 
+const btnContact = document.querySelector('.btnContact');
+
 aboutLink.addEventListener('click', function (event) {
     event.preventDefault();
     infoBox.classList.toggle('show');
@@ -43,6 +45,12 @@ contactLink.addEventListener('click', function (event) {
     event.preventDefault();
     contactBox.classList.toggle('show');
     console.log("Contact box toggled");
+});
+
+
+btnContact.addEventListener('click', function () {
+    contactBox.classList.add('show'); // Show the contact-info box
+    console.log("Navigated to contact-info");
 });
 
 closeButtons.forEach(button => {
