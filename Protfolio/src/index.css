@@ -108,7 +108,10 @@
     margin-top: 10px;
 }
 
-.contact-section button{
+
+
+
+.btnContact{
     padding: 8px 28px;
     background-color: rgb(253, 67, 18);
     border: 1px solid rgb(253, 67, 18);
@@ -119,10 +122,13 @@
     transition: .6s;
 }
 
-.contact-section button:hover{
+.btnContact:hover{
     background-color: rgb(255, 55, 0);
     border-color: 1px solid rgb(255, 55, 0);
 }
+
+
+
 .contact-section  .social-icons i{
     font-size: 1.5rem;
     margin: 0 5px;
