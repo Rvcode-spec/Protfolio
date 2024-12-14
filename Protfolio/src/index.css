@@ -10,7 +10,8 @@
 .main{
     width: 100%;
     min-height: 720px;
-    background-color: #f5edd8;
+    /* background-color: #f5edd8; */
+    background-color: blueviolet;
     overflow: hidden;
 }
 
