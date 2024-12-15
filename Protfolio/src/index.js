@@ -63,7 +63,8 @@ closeButtons.forEach(button => {
 
 
 
-const colors = ["#d20962", "#0ebeff", "#7ac143", "#00a78e", "#00bce4", "#8e43e7", "#005be2",];
+// const colors = ["#d20962", "#0ebeff", "#7ac143", "#00a78e", "#00bce4", "#8e43e7", "#005be2",];
+
 const numballs = 30;
 const balls = [];
 for (let i = 0; i < numballs; i++) {

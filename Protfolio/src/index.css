@@ -11,7 +11,7 @@
     width: 100%;
     min-height: 720px;
     /* background-color: #f5edd8; */
-    background-color: blueviolet;
+    background-color: #111;
     overflow: hidden;
 }
 
@@ -82,11 +82,12 @@
     margin-bottom: 20px;
 }
 
-.hero .content h1, .hero .content h1 span{
-    font-size: 6rem;
+.hero .content h3, .hero .content h3 span{
+    font-size: 4rem;
     line-height: 7rem;
     letter-spacing: 1.4px;
-    color: rgb(253, 182, 60);
+    /* color: rgb(253, 182, 60); */
+    color: #fff;
     margin-bottom: 20px;
 }
 
