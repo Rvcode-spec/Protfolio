@@ -13,6 +13,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
     <!-- Demo styles -->
     <style>
       .swiper {
@@ -146,30 +148,51 @@
             >
               MERN Stack Developer
             </p>
-            <button
-              class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group"
-            >
-              About Me
-          </button>
+
+<button id="toggleButton"class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group">
+  Toggle Info
+</button>
+
+<!-- Info Item (hidden initially) -->
+<ul>
+  <li id="infoItem" class="hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  p-1 rounded-lg z-50" style="width: 800px; height: 400px; background-color: #4b494d; font-weight: 700; ">
+    <div class="info flex items-center justify-between">
+      <!-- Shifted image to the right -->
+      <img src="./assets/images/coder.svg" alt="" class="mr-auto bg-black">
+      
+      <!-- Close icon -->
+       <div class="text-2xl cursor-pointer bg-black" id="closeInfo">
+        <i class="fa-solid fa-xmark" style="color: #000000; font-size: 20px; position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;">
+    </i>
+       </div>
+      <!-- Shifted text to the left -->
+      <p class="ml-4  text-white text-center">
+        I design and develop creative, user-friendly websites for web developers that align with their vision. Using advanced technologies, I create engaging websites that attract and retain visitors.
+      </p>
+    </div>
+    <ul class="about-me-detail  text-black" style="display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+      <li style="margin: 8px;" >#javascript</li>
+      <li style="margin: 8px;">#react.js</li>
+      <li style="margin: 8px;">#redux</li>
+      <li style="margin: 8px;">#node.js</li>
+      <li style="margin: 8px;">#express.js</li>
+      <li style="margin: 8px;">#mongoDB</li>
+      <li style="margin: 8px;">#mongoose</li>
+      <li style="margin: 8px;">#ejs</li>
+      <li style="margin: 8px;">#html</li>
+      <li style="margin: 8px;">#css</li>
+      <li style="margin: 8px;">#bootstrap</li>
+      <li style="margin: 8px;">#tailwind</li>
+      <li style="margin: 8px;">#git</li>
+      <li style="margin: 8px;">#github</li>
+      <li style="margin: 8px;">#aws</li>
+    </ul>
           </div>
         </div>
-
         
-       
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- -------------------------------Icons ---------------------------------------------- -->
         <ul class="ml-auto space-y-6 text-[#b0b2c3] absolute right-8">
           <li>
@@ -269,16 +292,9 @@
       </div>
     </section>
 
+   
 
-    <section class="flex flex-col justify-between h-screen">
-      <div  id="about">
-        <div>
-         <h2 class="text-3xl font-bold text-gray-900" >About Me</h2>
-        </div>
-       </div>
-
-    </section>
-
+  
 
   <!-- Latest Works Part-2  Frist Project Study.in -->
 <section class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16">
