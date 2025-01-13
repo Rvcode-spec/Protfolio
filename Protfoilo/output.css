@@ -2068,7 +2068,7 @@ video {
 @media (max-width: 768px) {
   #infoItem {
     width: 80%;
-    height: 80%;
+    /* height: 80%; */
     padding: 18px;
     flex-direction: column;
   }
@@ -2090,7 +2090,7 @@ video {
 
   .about-me-detail {
     flex-direction: row;
-    gap: 2px;
+    gap: 6px;
     justify-content: center;
   }
 }
@@ -2098,8 +2098,8 @@ video {
 /* For devices with max-width of 480px */
 @media (max-width: 480px) {
   #infoItem {
-    width: 40%;
-    height: 40%;
+    width: 80%;
+    /* height: 80%; */
     padding: 14px;
     flex-direction: row;
   }
